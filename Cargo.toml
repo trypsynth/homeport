@@ -1,0 +1,20 @@
+[package]
+name = "homeport"
+version = "0.1.0"
+description = "Finds where a desktop app keeps its config and resources, whether it runs portable, installed, from a macOS app bundle, or from an AppImage."
+readme = "README.md"
+repository = "https://github.com/trypsynth/homeport"
+keywords = ["portable", "config", "directories", "desktop"]
+categories = ["filesystem", "os"]
+license = "MIT"
+edition = "2024"
+rust-version = "1.88"
+
+[dependencies]
+dirs = "7.0.0"
+
+[lints.clippy]
+all = { level = "warn", priority = -1 }
+cargo = { level = "warn", priority = -1 }
+nursery = { level = "warn", priority = -1 }
+pedantic = { level = "warn", priority = -1 }
